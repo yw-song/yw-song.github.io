@@ -7,7 +7,7 @@ tags: WSL Ubuntu
 
 > 转载自 [链接 USB 设备](https://learn.microsoft.com/zh-cn/windows/wsl/connect-usb) 为整理方便写到博客中。
 
-# 宿主机 `USB` 设备连接到 `WSL` 中 
+# 宿主机 USB 设备连接到 WSL 中 
 
 ## 先决条件
 
@@ -18,8 +18,6 @@ tags: WSL Ubuntu
 
 我使用的是：Windows 10 专业版 22H2 | WSL2 | Ubuntu - 20.04
 
-> [!NOTE]
->
 > 若要检查 Windows 版本及内部版本号，选择 Windows 徽标键 + R，然后键入“winver”，选择“确定”。 可通过选择“开始”>“设置”>“Windows 更新”>“[检查更新](ms-settings:windowsupdate)”来更新到最新的 Windows 版本。 若要检查 Linux 内核版本，请打开 Linux 发行版并输入命令：`uname -a`。 若要手动更新到最新内核，请打开 PowerShell 并输入以下命令：`wsl --update`。
 
 ## 安装 USBIPD-WIN 项目
@@ -46,8 +44,6 @@ WSL 本身并不支持连接 USB 设备，因此你需要安装开源 usbipd-win
 
 在附加 USB 设备之前，请确保 WSL 命令行已打开。 这将使 WSL 2 轻型 VM 保持活动状态。
 
-> [!NOTE]
->
 > 此文档假定已安装 [`usbipd-win 4.0.0` 或更高版本](https://github.com/dorssel/usbipd-win/releases/latest)
 
 1. 通过以*管理员* 模式打开 PowerShell 并输入以下命令，列出所有连接到 Windows 的 USB 设备。 列出设备后，选择并复制要附加到 WSL 的设备总线 ID。
